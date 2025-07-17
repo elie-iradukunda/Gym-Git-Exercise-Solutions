@@ -301,6 +301,52 @@ To https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git
 user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/bundle-2)
 
 
+## banble 2
+## exercises 2
+
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise
+$ cd 'c:/Users/user/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions'
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git fetch origin
+git pull origin main         # Get the latest updates from main branch 
+From https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions
+   e0a8fb1..fcf512f  ft/service-redesign -> origin/ft/service-redesign
+From https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+Updating e0a8fb1..8e16377
+Fast-forward
+ service.html | 3 +++
+ 1 file changed, 3 insertions(+)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git merge main
+Already up to date.
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git add .
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git commit -m "Merge main into ft/service-redesign"
+[ft/service-redesign 66c95f1] Merge main into ft/service-redesign
+ 3 files changed, 47 insertions(+), 23 deletions(-)
+ delete mode 100644 services.html
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/service-redesign)
+$ git push origin ft/service-redesign
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 823 bytes | 823.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.  
+To https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git   
+   fcf512f..66c95f1  ft/service-redesign -> ft/service-redesign        
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/service-redesign)
+
 
 
 ```
