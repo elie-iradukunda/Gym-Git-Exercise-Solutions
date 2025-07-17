@@ -432,6 +432,113 @@ To https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git
 user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/contact-page)
 
 
+
+## bandle3 
+## exercise2
+
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/team-page) 
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/faq-page)  
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git checkout main 
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.    
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git pull origin main 
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.      
+remote: Compressing objects: 100% (2/2), done.   
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (2/2), 1.75 KiB | 256.00 KiB/s, done.
+From https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD    
+   7222623..67f0eb8  main       -> origin/main
+Updating 7222623..67f0eb8
+Fast-forward
+ README.md    | 85 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ contact.html | 11 ++++++++
+ faq.html     | 11 ++++++++
+ 3 files changed, 106 insertions(+), 1 deletion(-)
+ create mode 100644 contact.html
+ create mode 100644 faq.html
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git commit -m"some changes in main"
+[main 5ac4193] some changes in main
+ 1 file changed, 1 insertion(+)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 334 bytes | 334.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git
+   67f0eb8..5ac4193  main -> main
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git fetch origin
+git rebase origin/main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git add .
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git commit -m"changes for home page"
+[ft/home-page-redesign c9cf803] changes for home page
+ 1 file changed, 1 insertion(+)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push 
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 371 bytes | 371.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$
+
+
 ```
 
 
