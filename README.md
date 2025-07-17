@@ -812,6 +812,155 @@ user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutio
 $
 
 
+## bandle4
+## exercises2
+
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/footer)    
+$ git add .
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/footer)    
+$ git commit -m"some changes to index.html"
+[ft/footer 62e77d4] some changes to index.html
+ 2 files changed, 275 insertions(+)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/footer)    
+$ git add .
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/footer)    
+$ git commit -m"more changes from home.html"
+[ft/footer ca2ab55] more changes from home.html
+ 1 file changed, 1 insertion(+)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/footer)    
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer     
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/footer)    
+$ git push --set-upstream origin ft/footer
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 2.42 KiB | 495.00 KiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions/pull/new/ft/footer     
+remote:
+To https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer      
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/footer)    
+$ git checkout main 
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.    
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git pull origin main 
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.      
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 888 bytes | 222.00 KiB/s, done.
+From https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD    
+   929db27..825f912  main       -> origin/main
+Updating 929db27..825f912
+Fast-forward
+ README.md  | 274 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ home.html  |   1 +
+ index.html |   1 +
+ 3 files changed, 276 insertions(+)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/squashing) 
+$ git fetch origin ft/footer:ft/footer
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/squashing) 
+$ git merge --squash ft/footer
+Already up to date. (nothing to squash)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/squashing) 
+$ git commit -m "footer changes squashing"
+On branch ft/squashing
+nothing to commit, working tree clean
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/squashing) 
+$ git checkout ft
+error: pathspec 'ft' did not match any file(s) known to git
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/squashing) 
+$ git checkout ft/footer
+Switched to branch 'ft/footer'
+Your branch is up to date with 'origin/ft/footer'.
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/footer)    
+$ git add .
+git commit -m "Redesigned footer section"        
+[ft/footer ed3a285] Redesigned footer section
+ 1 file changed, 11 insertions(+)
+ create mode 100644 footer.html
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/footer)    
+$ git checkout ft/squashing 
+Switched to branch 'ft/squashing'
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/squashing) 
+$ git merge --squash ft/footer
+git commit -m "footer changes squashing"
+Squash commit -- not updating HEAD
+Automatic merge went well; stopped before committing as requested
+[ft/squashing 94b0f02] footer changes squashing
+ 1 file changed, 11 insertions(+)
+ create mode 100644 footer.html
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/squashing) 
+$ git push 
+fatal: The current branch ft/squashing has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/squashing  
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/squashing) 
+$ git push --set-upstream origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 443 bytes | 443.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions/pull/new/ft/squashing  
+remote:
+To https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/squashing) 
+$
+
 
 ```
 
