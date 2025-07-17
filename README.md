@@ -301,7 +301,7 @@ To https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git
 user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/bundle-2)
 
 
-## banble 2
+## bandle 2
 ## exercises 2
 
 
@@ -347,6 +347,89 @@ To https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git
 
 user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/service-redesign)
 
+## bandle 3 
+## exercise 1
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git cherry-pick b3f3ec8
+On branch ft/contact-page
+You are currently cherry-picking commit b3f3ec8.
+  (all conflicts fixed: run "git cherry-pick --continue")
+  (use "git cherry-pick --skip" to skip this patch)  
+  (use "git cherry-pick --abort" to cancel the cherry-pick operation)
+
+Untracked files:
+use "git add" to track)
+The previous cherry-pick is now empty, possibly due to conflict resolution.
+use "git add" to track)
+The previous cherry-pick is now empty, possibly due to conflict resolution.
+If you wish to commit it anyway, use:
+
+    git commit --allow-empty
+
+Otherwise, please use 'git cherry-pick --skip'
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/contact-page|CHERRY-PICKING)
+$ git cherry-pick --skip
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git cherry-pick b3f3ec8
+On branch ft/contact-page
+You are currently cherry-picking commit b3f3ec8.
+  (all conflicts fixed: run "git cherry-pick --continue")       
+  (use "git cherry-pick --skip" to skip this patch)
+  (use "git cherry-pick --abort" to cancel the cherry-pick operation)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        t commit and copy its hash- Checkout again using git cherry-pick get the changes from the last commit on the branch.- Add new changes for the contact page and commit, push them- Create a new PR for the contact page
+
+nothing added to commit but untracked files present (use "git add" to track)
+The previous cherry-pick is now empty, possibly due to conflict resolution.
+If you wish to commit it anyway, use:
+
+    git commit --allow-empty
+
+Otherwise, please use 'git cherry-pick --skip'
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/contact-page|CHERRY-PICKING)
+$ git cherry-pick --skip
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git add .
+error: open("t commit and copy its hash- Checkout again using git cherry-pick get the changes from the last commit on the branch.- Add new changes for the contact page and commit, push them- Create a new PR for the contact page"): Filename too long        
+error: unable to index file 't commit and copy its hash- Checkout again using git cherry-pick get the changes from the last commit on the branch.- Add new changes for the contact page and commit, push them- Create a new PR for the contact page'
+fatal: adding files failed
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ rm "t commit and copy its hash- Checkout again using git cherry-pick get the changes from the last commit on the branch.- Add new changes for the contact page and commit, push them- Create a new PR for the contact page"
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git add .
+git commit -m "feat: add contact page content"
+git push origin ft/contact-page
+[ft/contact-page c2a10ec] feat: add contact page content
+ 1 file changed, 11 insertions(+)
+ create mode 100644 contact.html
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 441 bytes | 441.00 KiB/s, done.    
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)   
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions/pull/new/ft/contact-page
+remote:
+To https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/contact-page)
 
 
 ```
