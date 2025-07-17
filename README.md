@@ -1,9 +1,11 @@
 # Gym-Git-Exercise-Solutions
 
-## Bangle 1
-## exercise 1
 
-...bash
+
+```bash
+
+## Bandle 1
+## exercise 1
 
 user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise
 $ git --version
@@ -81,12 +83,12 @@ bash: syntax error near unexpected token `newline'
 user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (dev)        
 $ git branch -D test
 Deleted branch test (was 764f545).
-...
+
 
 ##  bandle1
 ## exercises 2 solutions commangs
 
-...bash
+
 
 user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (dev)        
 $ git branch
@@ -263,8 +265,44 @@ $ git stash list
 
 user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (dev)
 $ rm team.html
-...
 
 
-## bandle2
-## exercises 1
+## bandle 2
+##   exercise1
+
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/bundle-2)
+$ git add service.html
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/bundle-2)
+$ git commit -m 'service.html page created'
+[ft/bundle-2 d7ee4e9] service.html page created
+ 1 file changed, 11 insertions(+)
+ create mode 100644 service.html
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/bundle-2)
+$ git push origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 435 bytes | 435.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)        
+remote: Resolving deltas: 100% (1/1), completed with 1 local object. 
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git 
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/bundle-2)
+
+
+
+
+```
+
+
