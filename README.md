@@ -539,6 +539,280 @@ user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutio
 $
 
 
+
+
+
+##bandle 4 exercise 1
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git pull origin main 
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.      
+remote: Compressing objects: 100% (2/2), done.   
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (2/2), 1.75 KiB | 256.00 KiB/s, done.
+From https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD    
+   7222623..67f0eb8  main       -> origin/main
+Updating 7222623..67f0eb8
+Fast-forward
+ README.md    | 85 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ contact.html | 11 ++++++++
+ faq.html     | 11 ++++++++
+ 3 files changed, 106 insertions(+), 1 deletion(-)
+ create mode 100644 contact.html
+ create mode 100644 faq.html
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git commit -m"some changes in main"
+[main 5ac4193] some changes in main
+ 1 file changed, 1 insertion(+)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 334 bytes | 334.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git
+   67f0eb8..5ac4193  main -> main
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git fetch origin
+git rebase origin/main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git add .
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git commit -m"changes for home page"
+[ft/home-page-redesign c9cf803] changes for home page
+ 1 file changed, 1 insertion(+)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push 
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 371 bytes | 371.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git checkout main 
+M       README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.    
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git pull origin main 
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.      
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 905 bytes | 452.00 KiB/s, done.
+From https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD    
+   5ac4193..adce3da  main       -> origin/main
+Updating 5ac4193..adce3da
+Fast-forward
+ home.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git status 
+On branch main
+Your branch is up to date with 'origin/main'.    
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git pull origin main 
+From https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD    
+Already up to date.
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git commit -m"readme updated for bandle 3 solution"
+[main 59c2780] readme updated for bandle 3 solution
+ 1 file changed, 107 insertions(+)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.04 KiB | 1.04 MiB/s, done.
+-iradukunda/git-exercise-copy.git
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git remote -v
+git-copy        https://github.com/elie-iradukunda/git-exercise-copy.git (fetch)
+git-copy        https://github.com/elie-iradukunda/git-exercise-copy.git (push)
+origin  https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git (push)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git add .
+git commit -m "chore: update home page for bundle 4"
+[main 493da10] chore: update home page for bundle 4
+ 1 file changed, 1 insertion(+)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git push origin main
+git push git-copy main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 359 bytes | 89.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git
+   59c2780..493da10  main -> main
+To https://github.com/elie-iradukunda/git-exercise-copy.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/elie-iradukunda/git-exercise-copy.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git pull git-copy main --rebase
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 867 bytes | 108.00 KiB/s, done.
+From https://github.com/elie-iradukunda/git-exercise-copy
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> git-copy/main
+Auto-merging README.md
+CONFLICT (add/add): Merge conflict in README.md
+error: could not apply 689b3da... Initial commit
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+hint: Disable this message with "git config set advice.mergeConflict false"
+Could not apply 689b3da... # Initial commit
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main|REBASE 1/21)
+$ git push git-copy main
+To https://github.com/elie-iradukunda/git-exercise-copy.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/elie-iradukunda/git-exercise-copy.git'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. If you want to integrate the remote changes, use 'git pull'
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main|REBASE 1/21)
+$ git rebase --continue
+README.md: needs merge
+You must edit all merge conflicts and then
+mark them as resolved using git add
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main|REBASE 1/21)
+$ git push git-copy main --force
+Enumerating objects: 82, done.
+Counting objects: 100% (82/82), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (80/80), done.
+Writing objects: 100% (82/82), 19.41 KiB | 1.94 MiB/s, done.
+Total 82 (delta 41), reused 3 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (41/41), done.
+To https://github.com/elie-iradukunda/git-exercise-copy.git
+ + f265307...493da10 main -> main (forced update)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main|REBASE 1/21)
+$ git rebase --abort
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git remote add git-copy https://github.com/elie-iradukunda/git-exercise-copy.git
+error: remote git-copy already exists.
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git remote -v
+git-copy        https://github.com/elie-iradukunda/git-exercise-copy.git (fetch)
+git-copy        https://github.com/elie-iradukunda/git-exercise-copy.git (push)
+origin  https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git (push)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git add home.html
+git commit -m "chore: update homepage with new paragraph"
+[main 929db27] chore: update homepage with new paragraph
+ 1 file changed, 1 insertion(+)
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 369 bytes | 369.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/elie-iradukunda/Gym-Git-Exercise-Solutions.git
+   493da10..929db27  main -> main
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$ git push git-copy main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 369 bytes | 369.00 KiB/s, done.    
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)   
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/elie-iradukunda/git-exercise-copy.git     
+   493da10..929db27  main -> main
+
+user@LAPTOP-V9PT987N MINGW64 ~/Desktop/gym-git-exercise/Gym-Git-Exercise-Solutions (main)
+$
+
+
+
 ```
 
 
